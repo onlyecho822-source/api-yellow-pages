@@ -1,0 +1,1084 @@
+{
+  "summary": {
+    "total_apis": 20,
+    "verified": 6,
+    "caution": 1,
+    "failed": 13,
+    "pass_rate": 35.0,
+    "avg_truth_score": 51.7
+  },
+  "verified_apis": [
+    {
+      "api_id": "data_gov",
+      "api_name": "Data.gov",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:56.295760",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 909.46,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "federal_register",
+      "api_name": "Federal Register API",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:55.794333",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 774.33,
+      "http_status": 200,
+      "data_quality_score": 100,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 20,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 100,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "pubmed",
+      "api_name": "PubMed",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:56.103474",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 892.79,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 3
+      },
+      "auth_required": false,
+      "auth_type": "api_key",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "crossref",
+      "api_name": "CrossRef",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:56.086182",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 1024.49,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 50
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "world_bank",
+      "api_name": "World Bank",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:56.322894",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 424.47,
+      "http_status": 200,
+      "data_quality_score": 80,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 1,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 92,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "github",
+      "api_name": "GitHub",
+      "category": "code",
+      "tested_at": "2026-01-05T01:16:55.696882",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 870.7,
+      "http_status": 200,
+      "data_quality_score": 100,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 30,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 30
+      },
+      "auth_required": false,
+      "auth_type": "bearer",
+      "truth_score": 100,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "caution_apis": [
+    {
+      "api_id": "arxiv",
+      "api_name": "arXiv",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:55.543626",
+      "verification_level": "caution",
+      "connectivity_score": 100,
+      "response_time_ms": 715.92,
+      "http_status": 200,
+      "data_quality_score": 30,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 1
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 72,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Returns non-JSON data"
+      ]
+    }
+  ],
+  "failed_apis": [
+    {
+      "api_id": "usa_spending",
+      "api_name": "USAspending.gov",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:57.336991",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": 2530.02,
+      "http_status": 405,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 20,
+      "passed": false,
+      "errors": [
+        "HTTP 405"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "semantic_scholar",
+      "api_name": "Semantic Scholar",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:55.213963",
+      "verification_level": "failed",
+      "connectivity_score": 70,
+      "response_time_ms": 217.4,
+      "http_status": 429,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 100
+      },
+      "auth_required": false,
+      "auth_type": "api_key",
+      "truth_score": 48,
+      "passed": false,
+      "errors": [
+        "HTTP 429"
+      ],
+      "warnings": [
+        "Rate limited"
+      ]
+    },
+    {
+      "api_id": "newsapi",
+      "api_name": "NewsAPI",
+      "category": "news",
+      "tested_at": "2026-01-05T01:16:55.156171",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 348.53,
+      "http_status": 401,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_day": 100
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 29,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 401)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "guardian",
+      "api_name": "The Guardian",
+      "category": "news",
+      "tested_at": "2026-01-05T01:16:55.591255",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 783.45,
+      "http_status": 401,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_second": 12
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 29,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 401)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "census",
+      "api_name": "US Census Bureau",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:56.915080",
+      "verification_level": "failed",
+      "connectivity_score": 20,
+      "response_time_ms": 2107.1,
+      "http_status": 400,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 500
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 25,
+      "passed": false,
+      "errors": [
+        "HTTP 400"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "bls",
+      "api_name": "Bureau of Labor Statistics",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:57.461807",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": 2653.78,
+      "http_status": 405,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_day": 500
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "HTTP 405"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "fred",
+      "api_name": "FRED Economic Data",
+      "category": "data",
+      "tested_at": "2026-01-05T01:17:10.053175",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": null,
+      "http_status": null,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "Timeout"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "wikipedia",
+      "api_name": "Wikipedia",
+      "category": "knowledge",
+      "tested_at": "2026-01-05T01:16:54.851397",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 43.21,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 200
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "openalex",
+      "api_name": "OpenAlex",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:57.438787",
+      "verification_level": "failed",
+      "connectivity_score": 100,
+      "response_time_ms": 1214.17,
+      "http_status": 200,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 10
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 60,
+      "passed": false,
+      "errors": [
+        "400, message:\n  Can not decode content-encoding: br"
+      ],
+      "warnings": []
+    },
+    {
+      "api_id": "core",
+      "api_name": "CORE",
+      "category": "research",
+      "tested_at": "2026-01-05T01:17:10.053352",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": null,
+      "http_status": null,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "Timeout"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "dtic",
+      "api_name": "Defense Technical Information Center",
+      "category": "military",
+      "tested_at": "2026-01-05T01:16:56.639280",
+      "verification_level": "failed",
+      "connectivity_score": 100,
+      "response_time_ms": 1767.47,
+      "http_status": 200,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 60,
+      "passed": false,
+      "errors": [
+        "400, message:\n  Can not decode content-encoding: br"
+      ],
+      "warnings": []
+    },
+    {
+      "api_id": "sec_edgar",
+      "api_name": "SEC EDGAR",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:54.874820",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 66.26,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 10
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "loc",
+      "api_name": "Library of Congress",
+      "category": "knowledge",
+      "tested_at": "2026-01-05T01:16:54.883537",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 74.91,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    }
+  ],
+  "full_results": [
+    {
+      "api_id": "data_gov",
+      "api_name": "Data.gov",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:56.295760",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 909.46,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "usa_spending",
+      "api_name": "USAspending.gov",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:57.336991",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": 2530.02,
+      "http_status": 405,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 20,
+      "passed": false,
+      "errors": [
+        "HTTP 405"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "federal_register",
+      "api_name": "Federal Register API",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:55.794333",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 774.33,
+      "http_status": 200,
+      "data_quality_score": 100,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 20,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 100,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "semantic_scholar",
+      "api_name": "Semantic Scholar",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:55.213963",
+      "verification_level": "failed",
+      "connectivity_score": 70,
+      "response_time_ms": 217.4,
+      "http_status": 429,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 100
+      },
+      "auth_required": false,
+      "auth_type": "api_key",
+      "truth_score": 48,
+      "passed": false,
+      "errors": [
+        "HTTP 429"
+      ],
+      "warnings": [
+        "Rate limited"
+      ]
+    },
+    {
+      "api_id": "pubmed",
+      "api_name": "PubMed",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:56.103474",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 892.79,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 3
+      },
+      "auth_required": false,
+      "auth_type": "api_key",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "arxiv",
+      "api_name": "arXiv",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:55.543626",
+      "verification_level": "caution",
+      "connectivity_score": 100,
+      "response_time_ms": 715.92,
+      "http_status": 200,
+      "data_quality_score": 30,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 1
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 72,
+      "passed": true,
+      "errors": [],
+      "warnings": [
+        "Returns non-JSON data"
+      ]
+    },
+    {
+      "api_id": "crossref",
+      "api_name": "CrossRef",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:56.086182",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 1024.49,
+      "http_status": 200,
+      "data_quality_score": 60,
+      "returns_json": true,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 50
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 84,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "newsapi",
+      "api_name": "NewsAPI",
+      "category": "news",
+      "tested_at": "2026-01-05T01:16:55.156171",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 348.53,
+      "http_status": 401,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_day": 100
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 29,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 401)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "guardian",
+      "api_name": "The Guardian",
+      "category": "news",
+      "tested_at": "2026-01-05T01:16:55.591255",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 783.45,
+      "http_status": 401,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_second": 12
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 29,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 401)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "world_bank",
+      "api_name": "World Bank",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:56.322894",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 424.47,
+      "http_status": 200,
+      "data_quality_score": 80,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 1,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 92,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "census",
+      "api_name": "US Census Bureau",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:56.915080",
+      "verification_level": "failed",
+      "connectivity_score": 20,
+      "response_time_ms": 2107.1,
+      "http_status": 400,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 500
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 25,
+      "passed": false,
+      "errors": [
+        "HTTP 400"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "bls",
+      "api_name": "Bureau of Labor Statistics",
+      "category": "data",
+      "tested_at": "2026-01-05T01:16:57.461807",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": 2653.78,
+      "http_status": 405,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_day": 500
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "HTTP 405"
+      ],
+      "warnings": [
+        "Slow response (>2s)",
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "fred",
+      "api_name": "FRED Economic Data",
+      "category": "data",
+      "tested_at": "2026-01-05T01:17:10.053175",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": null,
+      "http_status": null,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 120
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "Timeout"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "wikipedia",
+      "api_name": "Wikipedia",
+      "category": "knowledge",
+      "tested_at": "2026-01-05T01:16:54.851397",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 43.21,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 200
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "openalex",
+      "api_name": "OpenAlex",
+      "category": "research",
+      "tested_at": "2026-01-05T01:16:57.438787",
+      "verification_level": "failed",
+      "connectivity_score": 100,
+      "response_time_ms": 1214.17,
+      "http_status": 200,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 10
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 60,
+      "passed": false,
+      "errors": [
+        "400, message:\n  Can not decode content-encoding: br"
+      ],
+      "warnings": []
+    },
+    {
+      "api_id": "core",
+      "api_name": "CORE",
+      "category": "research",
+      "tested_at": "2026-01-05T01:17:10.053352",
+      "verification_level": "failed",
+      "connectivity_score": 0,
+      "response_time_ms": null,
+      "http_status": null,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 85,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": true,
+      "auth_type": "api_key",
+      "truth_score": 17,
+      "passed": false,
+      "errors": [
+        "Timeout"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "github",
+      "api_name": "GitHub",
+      "category": "code",
+      "tested_at": "2026-01-05T01:16:55.696882",
+      "verification_level": "verified",
+      "connectivity_score": 100,
+      "response_time_ms": 870.7,
+      "http_status": 200,
+      "data_quality_score": 100,
+      "returns_json": true,
+      "data_structure_valid": true,
+      "results_count": 30,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 30
+      },
+      "auth_required": false,
+      "auth_type": "bearer",
+      "truth_score": 100,
+      "passed": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "api_id": "dtic",
+      "api_name": "Defense Technical Information Center",
+      "category": "military",
+      "tested_at": "2026-01-05T01:16:56.639280",
+      "verification_level": "failed",
+      "connectivity_score": 100,
+      "response_time_ms": 1767.47,
+      "http_status": 200,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 60,
+      "passed": false,
+      "errors": [
+        "400, message:\n  Can not decode content-encoding: br"
+      ],
+      "warnings": []
+    },
+    {
+      "api_id": "sec_edgar",
+      "api_name": "SEC EDGAR",
+      "category": "government",
+      "tested_at": "2026-01-05T01:16:54.874820",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 66.26,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_second": 10
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    },
+    {
+      "api_id": "loc",
+      "api_name": "Library of Congress",
+      "category": "knowledge",
+      "tested_at": "2026-01-05T01:16:54.883537",
+      "verification_level": "failed",
+      "connectivity_score": 30,
+      "response_time_ms": 74.91,
+      "http_status": 403,
+      "data_quality_score": 0,
+      "returns_json": false,
+      "data_structure_valid": false,
+      "results_count": 0,
+      "reliability_score": 100,
+      "rate_limit_info": {
+        "requests_per_minute": 60
+      },
+      "auth_required": false,
+      "auth_type": "none",
+      "truth_score": 32,
+      "passed": false,
+      "errors": [
+        "Authentication required (HTTP 403)"
+      ],
+      "warnings": [
+        "Skipped data quality test due to connectivity failure"
+      ]
+    }
+  ]
+}

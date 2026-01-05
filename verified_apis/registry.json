@@ -1,0 +1,348 @@
+{
+  "apis": [
+    {
+      "id": "data_gov",
+      "name": "Data.gov",
+      "category": "government",
+      "base_url": "https://catalog.data.gov/api/3",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/action/package_search?q={query}",
+        "dataset": "/action/package_show?id={id}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 60
+      },
+      "reliability_score": 85,
+      "documentation": "https://www.data.gov/developers/apis",
+      "active": true
+    },
+    {
+      "id": "usa_spending",
+      "name": "USAspending.gov",
+      "category": "government",
+      "base_url": "https://api.usaspending.gov/api/v2",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/search/spending_by_award",
+        "contracts": "/search/spending_by_award"
+      },
+      "rate_limits": {
+        "requests_per_minute": 60
+      },
+      "reliability_score": 90,
+      "documentation": "https://api.usaspending.gov",
+      "active": true
+    },
+    {
+      "id": "federal_register",
+      "name": "Federal Register API",
+      "category": "government",
+      "base_url": "https://www.federalregister.gov/api/v1",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/documents.json?conditions[term]={query}",
+        "document": "/documents/{document_number}.json"
+      },
+      "rate_limits": {
+        "requests_per_minute": 120
+      },
+      "reliability_score": 95,
+      "documentation": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "active": true
+    },
+    {
+      "id": "semantic_scholar",
+      "name": "Semantic Scholar",
+      "category": "research",
+      "base_url": "https://api.semanticscholar.org/graph/v1",
+      "auth_type": "api_key",
+      "endpoints": {
+        "search": "/paper/search?query={query}",
+        "paper": "/paper/{paper_id}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 100
+      },
+      "reliability_score": 90,
+      "documentation": "https://api.semanticscholar.org",
+      "active": true
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed",
+      "category": "research",
+      "base_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "auth_type": "api_key",
+      "endpoints": {
+        "search": "/esearch.fcgi?db=pubmed&term={query}&retmode=json",
+        "fetch": "/efetch.fcgi?db=pubmed&id={id}&retmode=xml"
+      },
+      "rate_limits": {
+        "requests_per_second": 3
+      },
+      "reliability_score": 95,
+      "documentation": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+      "active": true
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "category": "research",
+      "base_url": "http://export.arxiv.org/api",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/query?search_query=all:{query}&start=0&max_results=50"
+      },
+      "rate_limits": {
+        "requests_per_second": 1
+      },
+      "reliability_score": 85,
+      "documentation": "https://arxiv.org/help/api",
+      "active": true
+    },
+    {
+      "id": "crossref",
+      "name": "CrossRef",
+      "category": "research",
+      "base_url": "https://api.crossref.org",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/works?query={query}&rows=50"
+      },
+      "rate_limits": {
+        "requests_per_second": 50
+      },
+      "reliability_score": 90,
+      "documentation": "https://api.crossref.org",
+      "active": true
+    },
+    {
+      "id": "newsapi",
+      "name": "NewsAPI",
+      "category": "news",
+      "base_url": "https://newsapi.org/v2",
+      "auth_type": "api_key",
+      "endpoints": {
+        "search": "/everything?q={query}&sortBy=relevancy",
+        "top": "/top-headlines?q={query}"
+      },
+      "rate_limits": {
+        "requests_per_day": 100
+      },
+      "reliability_score": 85,
+      "documentation": "https://newsapi.org/docs",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "guardian",
+      "name": "The Guardian",
+      "category": "news",
+      "base_url": "https://content.guardianapis.com",
+      "auth_type": "api_key",
+      "endpoints": {
+        "search": "/search?q={query}&api-key={key}"
+      },
+      "rate_limits": {
+        "requests_per_second": 12
+      },
+      "reliability_score": 90,
+      "documentation": "https://open-platform.theguardian.com",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "world_bank",
+      "name": "World Bank",
+      "category": "data",
+      "base_url": "https://api.worldbank.org/v2",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/country/all/indicator/{indicator}?format=json",
+        "countries": "/country?format=json"
+      },
+      "rate_limits": {
+        "requests_per_minute": 120
+      },
+      "reliability_score": 95,
+      "documentation": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392",
+      "active": true
+    },
+    {
+      "id": "census",
+      "name": "US Census Bureau",
+      "category": "data",
+      "base_url": "https://api.census.gov/data",
+      "auth_type": "api_key",
+      "endpoints": {
+        "acs": "/2021/acs/acs5?get={variables}&for={geography}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 500
+      },
+      "reliability_score": 95,
+      "documentation": "https://www.census.gov/data/developers.html",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "bls",
+      "name": "Bureau of Labor Statistics",
+      "category": "data",
+      "base_url": "https://api.bls.gov/publicAPI/v2",
+      "auth_type": "api_key",
+      "endpoints": {
+        "series": "/timeseries/data/"
+      },
+      "rate_limits": {
+        "requests_per_day": 500
+      },
+      "reliability_score": 90,
+      "documentation": "https://www.bls.gov/developers/",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "fred",
+      "name": "FRED Economic Data",
+      "category": "data",
+      "base_url": "https://api.stlouisfed.org/fred",
+      "auth_type": "api_key",
+      "endpoints": {
+        "series": "/series/observations?series_id={id}&api_key={key}&file_type=json"
+      },
+      "rate_limits": {
+        "requests_per_minute": 120
+      },
+      "reliability_score": 95,
+      "documentation": "https://fred.stlouisfed.org/docs/api/fred/",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "category": "knowledge",
+      "base_url": "https://en.wikipedia.org/w/api.php",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "?action=query&list=search&srsearch={query}&format=json",
+        "page": "?action=query&prop=extracts&exintro&explaintext&titles={title}&format=json"
+      },
+      "rate_limits": {
+        "requests_per_second": 200
+      },
+      "reliability_score": 80,
+      "documentation": "https://www.mediawiki.org/wiki/API:Main_page",
+      "active": true
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "category": "research",
+      "base_url": "https://api.openalex.org",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/works?search={query}",
+        "work": "/works/{id}"
+      },
+      "rate_limits": {
+        "requests_per_second": 10
+      },
+      "reliability_score": 85,
+      "documentation": "https://docs.openalex.org",
+      "active": true
+    },
+    {
+      "id": "core",
+      "name": "CORE",
+      "category": "research",
+      "base_url": "https://api.core.ac.uk/v3",
+      "auth_type": "api_key",
+      "endpoints": {
+        "search": "/search/works?q={query}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 60
+      },
+      "reliability_score": 80,
+      "documentation": "https://core.ac.uk/documentation",
+      "active": false,
+      "requires_key": true
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "code",
+      "base_url": "https://api.github.com",
+      "auth_type": "bearer",
+      "endpoints": {
+        "search_repos": "/search/repositories?q={query}",
+        "search_code": "/search/code?q={query}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 30
+      },
+      "reliability_score": 95,
+      "documentation": "https://docs.github.com/en/rest",
+      "active": true
+    },
+    {
+      "id": "dtic",
+      "name": "Defense Technical Information Center",
+      "category": "military",
+      "base_url": "https://discover.dtic.mil",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/search/results?q={query}"
+      },
+      "rate_limits": {
+        "requests_per_minute": 60
+      },
+      "reliability_score": 75,
+      "documentation": "https://discover.dtic.mil",
+      "active": true,
+      "note": "Web scraping required, no official API"
+    },
+    {
+      "id": "sec_edgar",
+      "name": "SEC EDGAR",
+      "category": "government",
+      "base_url": "https://www.sec.gov/cgi-bin/browse-edgar",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "?action=getcompany&company={query}&output=atom"
+      },
+      "rate_limits": {
+        "requests_per_second": 10
+      },
+      "reliability_score": 90,
+      "documentation": "https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm",
+      "active": true
+    },
+    {
+      "id": "loc",
+      "name": "Library of Congress",
+      "category": "knowledge",
+      "base_url": "https://www.loc.gov",
+      "auth_type": "none",
+      "endpoints": {
+        "search": "/search/?q={query}&fo=json"
+      },
+      "rate_limits": {
+        "requests_per_minute": 60
+      },
+      "reliability_score": 85,
+      "documentation": "https://www.loc.gov/apis/",
+      "active": true
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-01-05",
+    "total_apis": 20,
+    "active_apis": 13,
+    "categories": ["government", "research", "news", "data", "knowledge", "code", "military"]
+  }
+}
