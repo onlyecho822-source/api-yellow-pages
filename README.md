@@ -197,3 +197,46 @@ If you find this useful, please star the repository to help others discover it!
 
 **Built with 🐙 Octopus Mode**  
 *Extending our reach across the API universe, one tentacle at a time.*
+
+## 🤖 Autonomous System
+
+The API Yellow Pages now includes a fully autonomous system that continuously discovers, validates, and maintains the directory without human intervention.
+
+### Key Features
+
+- **Auto-Discovery**: Searches GitHub, Data.gov, and other sources every 24 hours
+- **Smart Categorization**: Automatically organizes APIs by industry and use case
+- **Truth Engine Validation**: Tests all APIs every 6 hours
+- **Self-Healing Registry**: Removes dead APIs, promotes healthy ones
+- **Health Tracking**: Maintains performance history for all APIs
+- **Auto-Commit**: Pushes updates to GitHub automatically
+- **Live Dashboard**: Real-time monitoring interface
+
+### Components
+
+- `autonomous/` - Discovery engine, registry manager, orchestrator
+- `dashboard/` - Live monitoring interface
+- `docs/` - Architecture and system documentation
+
+### Quick Start
+
+```bash
+# Run autonomous cycle
+python3 autonomous/orchestrator.py
+
+# View live dashboard
+cd dashboard && python3 -m http.server 8000
+```
+
+### Configuration
+
+All autonomous behavior is configurable via `autonomous/config.json`:
+
+- Discovery interval (default: 24h)
+- Validation interval (default: 6h)
+- Reporting interval (default: 7d)
+- Auto-commit enabled/disabled
+
+---
+
+**Timestamp:** 01:42 Jan 05 2026
